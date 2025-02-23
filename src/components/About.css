@@ -1,0 +1,33 @@
+.aboutContainer{
+    display:flex;
+    padding:40px;
+   
+    justify-content: center;
+}
+.aboutCard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: azure;
+
+}
+.aboutImage img{
+    width:400px;
+    height:400px;
+    padding: 10px;
+}
+.aboutSection{
+    padding:10px;
+}
+.one p, .two p{
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+@media (max-width:786px) {
+    .aboutCard{
+        flex-direction: column;
+    }    
+}

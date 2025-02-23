@@ -1,0 +1,70 @@
+.input{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+.input input{
+    padding:10px;
+    width:60%;
+    border-radius:20px;
+    border:1px solid grey;
+    text-align: center;
+}
+.plist img{
+    width:200px;
+    height: 200px;
+}
+
+.plist{
+    display:flex;
+    padding:20px;
+}
+.filter{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px grey;
+    height: 30vh;
+    margin-top: 50px;
+    padding:20px;
+    width:200px;
+    .filter-icon{
+        display:flex;
+        justify-content: center;
+    }ul{
+        display:flex;
+        flex-direction: column;
+        padding: 5px;
+        button{
+            margin-top: 10px;
+            padding:10px;
+            border-radius: 10px;
+            border:none;
+            background-color: rgb(52, 75, 76);
+            color:beige;
+        }
+        button:hover{
+            background-color: rgb(80, 118, 121);
+        }
+    }
+}
+@media (max-width:786px) {
+    .plist{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter{
+        display:flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 5px grey;
+        height: 30vh;
+        margin-top: 20px;
+        padding:20px;
+        width:300px;
+    }
+}
+.Picklesprice{
+    background-color: rgb(84, 108, 100);
+}

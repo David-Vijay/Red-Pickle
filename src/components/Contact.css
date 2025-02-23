@@ -1,0 +1,27 @@
+.contactContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    background-color: azure;
+}
+.contactCard{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:40px;
+    width:40%;
+    margin-top: 20px;
+    align-items: center;
+    box-shadow: 2px 2px 5px grey;
+    
+    h3{
+        margin-bottom: 20px;
+    }
+}
+.address p{
+    line-height: 1.5;
+    color:rgb(70, 70, 70);
+    
+}

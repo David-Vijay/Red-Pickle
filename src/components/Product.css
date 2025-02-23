@@ -1,0 +1,75 @@
+.product{
+    display:flex;
+    padding:20px 20%;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.details h3,.buttons, .cartbtn{
+    margin-top: 20px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons button{
+     margin-right: 15px;
+     padding:5px 10px;
+     font-weight: bold;
+     border-radius:20px;
+     border:none;
+     background-color: rgb(165, 190, 191);
+     color:black;
+     cursor: pointer;
+     transition: transform 0.3s ease-in-out;
+}
+.buttons button:hover{
+    background-color: rgb(144, 185, 187);
+    
+}
+.buttons button:active{
+    transform: scale(.9);
+    
+}
+.buttons button.active{
+    border:2px solid black;
+}
+.cartbtn{
+    padding:7px 10px;
+     font-weight: bold;
+     border-radius:20px;
+     border:none;
+     background-color: rgb(52, 75, 76);
+     color:beige;
+     cursor: pointer;
+     transition: transform 0.3s ease-in-out;
+}
+.cartbtn:active{
+    transform: scale(.9)
+}
+.details .buttons button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.cartbtn{
+    margin-top: 20px;
+}
+h2{
+    margin-bottom: 20px;
+}
+@media (max-width:1080px) {
+    .product{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .details{
+        display:Flex;
+        align-items: center;
+    }
+}
+
+/* animation */

@@ -1,0 +1,305 @@
+.cartContainer{
+    display:flex;
+    flex-direction: column;
+    padding:10px 10%;
+   justify-content: center;
+    width:80%;
+    
+}
+.empty{
+    display: flex;
+    justify-content: center;
+    color:grey; 
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cartContainer .order{
+    margin-top: 10px;
+    background-color: whitesmoke;
+    display:flex;
+    flex:12;
+    justify-content: space-between;
+    padding:10px;
+    align-items: center;
+}
+@media (max-width:650px) {
+    .order{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .priceDetails{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+.price{
+    background-color: whitesmoke;
+    display:flex;
+    flex-direction: column;
+    width:20%;
+}
+.priceDetails{
+    display:flex;
+    flex-direction: column;
+}
+.pd{
+    margin-top: 10px;
+}
+.removeBtn{
+    margin-top:20px;
+    background-color: tomato;
+    border-radius:20px;
+    border:none;
+    padding:5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.quantity{
+    display:flex;
+    justify-content: center;
+
+}
+.qtyinput{
+    display:flex;
+    text-align: center;
+    padding:5px;
+    width:10%;
+    margin:5px;
+    
+}
+.qtybtn{
+    background-color: rgb(121, 141, 141);
+    border:none;
+    padding:10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in;
+}
+.qtybtn:active{
+    transform: scale(.9);
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding:10px
+}
+.total .totalCost{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cost{
+    display:flex;  
+    flex-direction: column;
+    
+}
+
+.ship{
+    display:flex; justify-content:space-between; width:30%; align-items:center;
+}
+.totalPrice{
+    display:flex; justify-content:space-between;width:30%;align-items:center}
+
+@media (max-width:700px) {
+    .ship,.totalPrice{
+        width:100%;
+    }
+}
+.Checkout{
+    background-color: rgb(109, 145, 145);
+    padding: 10px 20px;
+    border:none
+}
+.checkout{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* button{
+        background-color: rgb(145, 182, 170);
+        border:none;
+        padding:10px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: larger;
+        width:40%;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    button:active{
+        transform:scale(0.9)
+    } */
+    
+}
+/* From Uiverse.io by Galahhad */ 
+.ui-btn {
+    --btn-default-bg: rgb(41, 41, 41);
+    --btn-padding: 15px 20px;
+    --btn-hover-bg: rgb(51, 51, 51);
+    --btn-transition: .3s;
+    --btn-letter-spacing: .1rem;
+    --btn-animation-duration: 1.2s;
+    --btn-shadow-color: rgba(0, 0, 0, 0.137);
+    --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+    --hover-btn-color: #FAC921;
+    --default-btn-color: #fff;
+    --font-size: 16px;
+    /* 👆 this field should not be empty */
+    --font-weight: 600;
+    --font-family: Menlo,Roboto Mono,monospace;
+    /* 👆 this field should not be empty */
+  }
+  
+  /* button settings 👆 */
+  
+  .ui-btn {
+    box-sizing: border-box;
+    padding: var(--btn-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-btn-color);
+    font: var(--font-weight) var(--font-size) var(--font-family);
+    /* background: var(--btn-default-bg); */
+    background-color: rgb(145, 182, 170);
+    width:40%;
+    border: none;
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+    transition: transform 0.2s ease;
+  }
+  .ui-btn:active{
+        transform: scale(0.9);
+  }
+  
+  .ui-btn span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    
+  }
+  
+  .ui-btn span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+  }
+  
+  .ui-btn:hover, .ui-btn:focus {
+    background: var(--btn-hover-bg);
+  }
+  
+  .ui-btn:hover span, .ui-btn:focus span {
+    color: var(--hover-btn-color);
+  }
+  
+  .ui-btn:hover span::before, .ui-btn:focus span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+  }
+  
+  @keyframes chitchat {
+    0% {
+      content: "#";
+    }
+  
+    5% {
+      content: ".";
+    }
+  
+    10% {
+      content: "^{";
+    }
+  
+    15% {
+      content: "-!";
+    }
+  
+    20% {
+      content: "#$_";
+    }
+  
+    25% {
+      content: "№:0";
+    }
+  
+    30% {
+      content: "#{+.";
+    }
+  
+    35% {
+      content: "@}-?";
+    }
+  
+    40% {
+      content: "?{4@%";
+    }
+  
+    45% {
+      content: "=.,^!";
+    }
+  
+    50% {
+      content: "?2@%";
+    }
+  
+    55% {
+      content: "\;1}]";
+    }
+  
+    60% {
+      content: "?{%:%";
+      right: 0;
+    }
+  
+    65% {
+      content: "|{f[4";
+      right: 0;
+    }
+  
+    70% {
+      content: "{4%0%";
+      right: 0;
+    }
+  
+    75% {
+      content: "'1_0<";
+      right: 0;
+    }
+  
+    80% {
+      content: "{0%";
+      right: 0;
+    }
+  
+    85% {
+      content: "]>'";
+      right: 0;
+    }
+  
+    90% {
+      content: "4";
+      right: 0;
+    }
+  
+    95% {
+      content: "2";
+      right: 0;
+    }
+  
+    100% {
+      content: "";
+      right: 0;
+    }
+  }
